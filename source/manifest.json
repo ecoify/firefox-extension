@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Ecoify Extension",
+  "short_name": "ecoify",
+  "description": "This extension will eco-ify your browsing behaviour.",
+  "version": "1.0.0",
+  "icons": {
+    "32": "assets/icon_on_32.png",
+    "48": "assets/icon_on_48.png",
+    "128": "assets/icon_on_128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "assets/icon_on_48.png",
+    "default_popup": "popup/popup.html",
+    "default_title": "Ecoify Firefox"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": false
+  },
+  "permissions": [
+    "activeTab",
+    "webRequest",
+    "storage",
+    "unlimitedStorage",
+    "webRequestBlocking",
+    "*://*.google.com/*",
+    "*://*.google.de/*",
+    "https://5tepzfsmxg.execute-api.eu-central-1.amazonaws.com/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ecoify-firefox@ecoify.org"
+    }
+  }
+}

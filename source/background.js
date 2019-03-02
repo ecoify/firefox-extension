@@ -209,8 +209,7 @@ function increaseCounter() {
 
 function req_callback(details) {
   try {
-    // if (/[&?]q=(.+?)&/.test(details.url) && /[&?]oq=(.+?)&/.test(details.url)) {
-    if (/[&?]q=(.+?)&/.test(details.url)) {
+    if (/[&?]q=(.+?)&/.test(details.url) || /[&?]oq=(.+?)&/.test(details.url)) {
       console.log(details.url)
       const term = details.url.match(/[&?]q=(.+?)&/)[1]
       console.log(term)

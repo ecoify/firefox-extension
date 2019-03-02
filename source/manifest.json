@@ -3,7 +3,7 @@
   "name": "Ecoify Extension",
   "short_name": "ecoify",
   "description": "This extension will eco-ify your browsing behaviour.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icons": {
     "32": "assets/icon_on_32.png",
     "48": "assets/icon_on_48.png",
